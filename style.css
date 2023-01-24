@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #04AA6D;
+}
+
+
+.project {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px black;
+    padding: 25px;
+    font-family: 'nokora';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.project:hover {
+    box-shadow: 1px 1px 4px black;
+    transition: all 0.35s;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.converter {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left,
+.right {
+    height: 100%;
+    width: 150px;
+}
+
+.center {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0px;
+    ;
+}
+
+.result {
+    font-size: 30px;
+}
+
+@media (max-width: 600px) {
+    .project {
+        width: 90%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .project>div {
+        font-size: 17px;
+    }
+}
